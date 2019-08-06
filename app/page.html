@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Knitting Companion</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form class="header-top__form form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Подпишитесь на нашу новостную рассылку</label>
+                            <input type="email" name="mail" class="form-control" id="exampleInputEmail1"
+                                   placeholder="Ваш Email">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">OK</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <a href="#" class="arrow-button-top">
+                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-center">
+        <nav class="navbar navigation-menu navigation-menu-mobile d-sm-block d-md-none">
+
+            <div class="collapse navbar-collapse" id="MobileMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <svg width="20" height="22" viewBox="0 0 20 22" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8L10 1L19 8V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8Z"
+                                      stroke="#F32657" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 21V11H13V21" stroke="#F32657" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Пряжа</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Инструменты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Обучение</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SALE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Оплата/доставка</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <form class="form-search form-search-mobile form d-sm-block d-md-none">
+
+            <div class="collapse navbar-collapse search-mobile" id="MobileSearch">
+                <div class="form-group">
+                    <input type="search" class="form-control input-search" placeholder="Поиск по сайту">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">Найти</button>
+            </div>
+        </form>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-2 col-sm-2 d-lg-none d-xl-none d-md-none d-sm-block">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MobileMenu"
+                            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+                                                               xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.31787H24.645" stroke="black" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M1 9.73608H24.645" stroke="black" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M1 18.1543H24.645" stroke="black" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+
+
+                </div>
+
+                <div class="col-xl-4 col-xs-4 col-lg-4 col-md-4 col-sm-8 col-8">
+                    <a href="index.html" class="logo"><img src="img/logo.png" class="image" alt=""></a>
+                </div>
+
+                <div class="col-sm-2 col-2 d-sm-block d-md-none">
+                    <button class="btn btn-secondary btn-search navbar-toggler d-sm-block d-md-none"
+                            data-toggle="collapse" data-target="#MobileSearch" type="button"
+                            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.8333 22.1667C17.988 22.1667 22.1667 17.988 22.1667 12.8333C22.1667 7.67868 17.988 3.5 12.8333 3.5C7.67868 3.5 3.5 7.67868 3.5 12.8333C3.5 17.988 7.67868 22.1667 12.8333 22.1667Z"
+                                              stroke="black" stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M24.5 24.5L19.425 19.425" stroke="black" stroke-width="2"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                    </button>
+                </div>
+
+                <div class="col-xl-8 col-md-8 col-lg-8 d-sm-none d-none d-md-block">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                            <span class="icon">
+                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 1L1 5V19C1 19.5304 1.21071 20.0391 1.58579 20.4142C1.96086 20.7893 2.46957 21 3 21H17C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V5L16 1H4Z"
+                                          stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M1 5H19" stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M14 9C14 10.0609 13.5786 11.0783 12.8284 11.8284C12.0783 12.5786 11.0609 13 10 13C8.93913 13 7.92172 12.5786 7.17157 11.8284C6.42143 11.0783 6 10.0609 6 9"
+                                          stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                                    Закажите онлайн
+                                </li>
+                                <li class="list-group-item">
+                               <span class="icon">
+                                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.8881 15.9201V18.9201C20.8892 19.1986 20.8322 19.4743 20.7206 19.7294C20.6091 19.9846 20.4454 20.2137 20.2402 20.402C20.035 20.5902 19.7927 20.7336 19.5289 20.8228C19.265 20.912 18.9855 20.9452 18.7081 20.9201C15.631 20.5857 12.6751 19.5342 10.0781 17.8501C7.66194 16.3148 5.61345 14.2663 4.07812 11.8501C2.38809 9.2413 1.33636 6.27109 1.00812 3.1801C0.983127 2.90356 1.01599 2.62486 1.10462 2.36172C1.19324 2.09859 1.33569 1.85679 1.52288 1.65172C1.71008 1.44665 1.93792 1.28281 2.19191 1.17062C2.44589 1.05843 2.72046 1.00036 2.99812 1.0001H5.99812C6.48342 0.995321 6.95391 1.16718 7.32188 1.48363C7.68985 1.80008 7.93019 2.23954 7.99812 2.7201C8.12474 3.68016 8.35957 4.62282 8.69812 5.5301C8.83266 5.88802 8.86178 6.27701 8.78202 6.65098C8.70227 7.02494 8.51698 7.36821 8.24812 7.6401L6.97812 8.9101C8.40167 11.4136 10.4746 13.4865 12.9781 14.9101L14.2481 13.6401C14.52 13.3712 14.8633 13.1859 15.2372 13.1062C15.6112 13.0264 16.0002 13.0556 16.3581 13.1901C17.2654 13.5286 18.2081 13.7635 19.1681 13.8901C19.6539 13.9586 20.0975 14.2033 20.4146 14.5776C20.7318 14.9519 20.9003 15.4297 20.8881 15.9201Z"
+                                          stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                               </svg>
+                               </span>
+                                    Задайте вопрос
+                                </li>
+                                <li class="list-group-item">
+                               <span class="icon">
+                                   <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z"
+                                          stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M21 3L11 10L1 3" stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                               </span>
+                                    Напишите нам
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xl-5 col-lg-6 col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                <span class="icon">
+                                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z"
+                                              stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z"
+                                              stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </svg>
+
+                                </span>
+                                    ТЦ “БУМ”, ул. Вайнера, 19
+                                </li>
+                                <li class="list-group-item">
+                               <span class="icon">
+                                   <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5V21L8 17L16 21L23 17V1L16 5L8 1L1 5Z" stroke="#353535"
+                                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 1V17" stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M16 5V21" stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </svg>
+                               </span>
+                                    Схема проезда
+                                </li>
+                                <li class="list-group-item">
+                               <span class="icon">
+                                   <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.9381 5C14.9149 5.19057 15.8125 5.66826 16.5162 6.37194C17.2199 7.07561 17.6976 7.97326 17.8881 8.95L13.9381 5ZM13.9381 1C15.9674 1.22544 17.8597 2.13417 19.3044 3.57701C20.749 5.01984 21.6601 6.91101 21.8881 8.94L13.9381 1ZM20.8881 16.92V19.92C20.8892 20.1985 20.8322 20.4742 20.7206 20.7293C20.6091 20.9845 20.4454 21.2136 20.2402 21.4019C20.035 21.5901 19.7927 21.7335 19.5289 21.8227C19.265 21.9119 18.9855 21.9451 18.7081 21.92C15.631 21.5856 12.6751 20.5341 10.0781 18.85C7.66194 17.3147 5.61345 15.2662 4.07812 12.85C2.38809 10.2412 1.33636 7.27099 1.00812 4.18C0.983127 3.90347 1.01599 3.62476 1.10462 3.36162C1.19324 3.09849 1.33569 2.85669 1.52288 2.65162C1.71008 2.44655 1.93792 2.28271 2.19191 2.17052C2.44589 2.05833 2.72046 2.00026 2.99812 2H5.99812C6.48342 1.99522 6.95391 2.16708 7.32188 2.48353C7.68985 2.79999 7.93019 3.23945 7.99812 3.72C8.12474 4.68007 8.35957 5.62273 8.69812 6.53C8.83266 6.88792 8.86178 7.27691 8.78202 7.65088C8.70227 8.02485 8.51698 8.36811 8.24812 8.64L6.97812 9.91C8.40167 12.4135 10.4746 14.4864 12.9781 15.91L14.2481 14.64C14.52 14.3711 14.8633 14.1858 15.2372 14.1061C15.6112 14.0263 16.0002 14.0555 16.3581 14.19C17.2654 14.5286 18.2081 14.7634 19.1681 14.89C19.6539 14.9585 20.0975 15.2032 20.4146 15.5775C20.7318 15.9518 20.9003 16.4296 20.8881 16.92Z"
+                                              stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                   </svg>
+                               </span>
+                                    <a href="tel:+73432882332">+7(343)288-23-32</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-12 col-md-12">
+                            <div class="clock">
+                               <span class="icon">
+                                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 21C16.4502 21 20.8684 16.5228 20.8684 11C20.8684 5.47715 16.4502 1 11 1C5.54983 1 1.13159 5.47715 1.13159 11C1.13159 16.5228 5.54983 21 11 21Z"
+                                              stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M11 5V11L14.9474 13" stroke="#353535" stroke-width="2"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                   </svg>
+                               </span>
+                                <div class="time">
+                                    10:00-20:00
+                                    <span>без выходных</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <form class="form-search form">
+                                <div class="form-group">
+                                    <input type="search" class="form-control input-search" placeholder="Поиск по сайту">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-submit">Найти</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 d-sm-none d-md-block">
+                    <nav class="navbar navbar-expand-lg navigation-menu navigation-menu-desktop">
+
+                        <div class="navbar-collapse" id="navbarToggler">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">
+                                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 8L10 1L19 8V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8Z"
+                                                  stroke="#F32657" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M7 21V11H13V21" stroke="#F32657" stroke-width="2"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Пряжа</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Инструменты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Обучение</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SALE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Оплата/доставка</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-6 col-4 col-sm-4">
+                            <div class="user">
+                        <span class="icon">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19"
+                                      stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z"
+                                      stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                                <a href="#" class="links-accent">Войти</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-4 d-md-none d-sm-block">
+                            <div class="truck">
+                        <span class="icon">
+                           <svg width="28" height="22" viewBox="0 0 28 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5303 1.56152H1.65759V15.2288H18.5303V1.56152Z" stroke="#A0A0A0"
+                                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.5303 6.81812H23.0297L26.4042 9.9721V15.2287H18.5303V6.81812Z"
+                                      stroke="#A0A0A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.71935 20.4854C8.27244 20.4854 9.53147 19.3087 9.53147 17.8571C9.53147 16.4055 8.27244 15.2288 6.71935 15.2288C5.16626 15.2288 3.90723 16.4055 3.90723 17.8571C3.90723 19.3087 5.16626 20.4854 6.71935 20.4854Z"
+                                      stroke="#A0A0A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.3424 20.4854C22.8955 20.4854 24.1545 19.3087 24.1545 17.8571C24.1545 16.4055 22.8955 15.2288 21.3424 15.2288C19.7893 15.2288 18.5303 16.4055 18.5303 17.8571C18.5303 19.3087 19.7893 20.4854 21.3424 20.4854Z"
+                                      stroke="#A0A0A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </span>
+                                <a href="#" class="links-accent">Войти</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-4 col-sm-4">
+                            <a href="#" class="basket" data-toggle="modal" data-target="#ModalCard">
+                                <span class="icon">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                                          stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                                          stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                                          stroke="#353535" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="links-accent">1250₽</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="content">
+
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">О нас</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="content__wrapper">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-12 col-sm-12">
+                    <div class="sidebar">
+                        <ul class="navbar-nav page-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="page.html">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Оплата</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Заказ товара</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">История магазина, Вопросы/ответы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">События</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-12 col-sm-12">
+
+                    <div class="page-content">
+                        <h1>О нас</h1>
+
+                        <div class="page-content__image">
+                            <img src="img/banner2.jpg" class="img-responsive" alt="">
+                        </div>
+
+                        <div class="page-content__text">
+                            <h4>Приветствуем Вас на сайте магазина пряжи "Вязание"!</h4>
+
+                            <p>Вязание, вышивка снова на пике популярности. Это и способ передать свою индивидуальность, и
+                               возможность побыть наедине с собой и своими мыслями, отвлечься от бешеного темпа современной
+                               жизни. Поэтому всё больше и больше наших современниц возвращаются к рукоделию, ведь, взяв в
+                               руки пряжу и спицы или любимую вышивку, получаешь грандиозный заряд положительных эмоций.</p>
+
+                            <p>Магазин пряжи "Вязание" работает уже восемь лет и за это время обрёл большую популярность.
+                               Надеемся, что и наш интернет-магазин также придётся Вам по душе и Вы найдёте здесь всё, что
+                               необходимо для воплощения Ваших творческих идей.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-sm-none d-md-block col-xl-2 col-lg-2 col-md-3">
+                <div class="footer__item">
+                    <h3>Заголовок</h3>
+                    <ul class="list-group">
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-none d-sm-none d-md-block col-xl-2 col-lg-2 col-md-3">
+                <div class="footer__item">
+                    <h3>Заголовок</h3>
+                    <ul class="list-group">
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-none d-sm-none d-md-block col-xl-2 col-lg-2 col-md-3">
+                <div class="footer__item">
+                    <h3>Заголовок</h3>
+                    <ul class="list-group">
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-none d-sm-none d-md-block col-xl-2 col-lg-2 col-md-3">
+                <div class="footer__item">
+                    <h3>Заголовок</h3>
+                    <ul class="list-group">
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                        <li><a href="#" class="list-group__item">Пункт меню</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-xl-4 col-md-12">
+                <div class="footer__item">
+                    <p>Подписка на новостную рассылку</p>
+                    <form class="form form-subscribe">
+                        <div class="form-group">
+                            <input type="email" name="mail" class="form-control" placeholder="Email">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-accent">Подписаться</button>
+                    </form>
+
+                    <p>Мы в соцсетях</p>
+                    <ul class="social-list">
+                        <li><a href="#" class="social-list__item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" class="social-list__item"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="social-list__item"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" class="social-list__item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="ModalCard" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="selected-product__header d-sm-none d-none d-md-block">
+                    <div class="row">
+                        <div class="col-11">
+                            <div class="selected-product__header-title">
+                                <div class="row">
+                                    <div class="col-md-3 d-none d-md-block d-sm-none"></div>
+                                    <div class="col-md-4 col-12 col-sm-12 title">
+                                        <h4>Товар</h4>
+                                    </div>
+                                    <div class="col-md-2 col-12 col-sm-12">
+                                        <h4>Кол-во</h4>
+                                    </div>
+                                    <div class="col-md-3 col-12 col-sm-12">
+                                        <h4>Стоимость</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="selected-products__item">
+                    <div class="row">
+                        <div class="col-md-11 col-sm-12 col-12">
+
+                            <div class="selected-products__item-content">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 col-6">
+                                        <a href="#" class="card-img-top">
+                                            <img class=" img-responsive" src="img/prod1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-8 col-6">
+                                        <div class="card-body">
+                                            <a href="#" class="card-title"><h5>Katia Creta</h5></a>
+                                            <div class="card-text-description">
+                                                20% шерсть 80% акрил, 100г
+                                            </div>
+                                            <div class="price">290₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-6 amount-wrapper">
+                                        <div class="amount">
+                                            <span class="down">-</span>
+                                            <input type="text" value="1" name="input-amount">
+                                            <span class="up">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-3 total-amount">
+                                        <div class="price">580₽</div>
+                                    </div>
+
+                                    <div class="col-sm-2 d-block col-3 d-sm-block d-md-none button">
+                                        <a href="#" class="btn-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 d-none d-sm-none d-md-block">
+                            <a href="#" class="btn-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="selected-products__item">
+                    <div class="row">
+                        <div class="col-md-11 col-sm-12 col-12">
+
+                            <div class="selected-products__item-content">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 col-6">
+                                        <a href="#" class="card-img-top">
+                                            <img class=" img-responsive" src="img/prod2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-8 col-6">
+                                        <div class="card-body">
+                                            <a href="#" class="card-title"><h5>Katia Creta</h5></a>
+                                            <div class="card-text-description">
+                                                20% шерсть 80% акрил, 100г
+                                            </div>
+                                            <div class="price">580₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-6 amount-wrapper">
+                                        <div class="amount">
+                                            <span class="down">-</span>
+                                            <input type="text" value="1" name="input-amount">
+                                            <span class="up">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-3 total-amount">
+                                        <div class="price">580₽</div>
+                                    </div>
+
+                                    <div class="col-sm-2 d-block col-3 d-sm-block d-md-none button">
+                                        <a href="#" class="btn-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 d-none d-sm-none d-md-block">
+                            <a href="#" class="btn-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="selected-products__item">
+                    <div class="row">
+                        <div class="col-md-11 col-sm-12 col-12">
+
+                            <div class="selected-products__item-content">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 col-6">
+                                        <a href="#" class="card-img-top">
+                                            <img class=" img-responsive" src="img/cat5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-8 col-6">
+                                        <div class="card-body">
+                                            <a href="#" class="card-title"><h5>Katia Creta</h5></a>
+                                            <div class="card-text-description">
+                                                20% шерсть 80% акрил, 100г
+                                            </div>
+                                            <div class="price">560₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-6 amount-wrapper">
+                                        <div class="amount">
+                                            <span class="down">-</span>
+                                            <input type="text" value="1" name="input-amount">
+                                            <span class="up">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-3 total-amount">
+                                        <div class="price">580₽</div>
+                                    </div>
+
+                                    <div class="col-sm-2 d-block col-3 d-sm-block d-md-none button">
+                                        <a href="#" class="btn-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 d-none d-sm-none d-md-block">
+                            <a href="#" class="btn-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="selected-products__item">
+                    <div class="row">
+                        <div class="col-md-11 col-sm-12 col-12">
+
+                            <div class="selected-products__item-content">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 col-6">
+                                        <a href="#" class="card-img-top">
+                                            <img class=" img-responsive" src="img/cat6.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-8 col-6">
+                                        <div class="card-body">
+                                            <a href="#" class="card-title"><h5>Katia Creta</h5></a>
+                                            <div class="card-text-description">
+                                                20% шерсть 80% акрил, 100г
+                                            </div>
+                                            <div class="price">350₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-4 col-6 amount-wrapper">
+                                        <div class="amount">
+                                            <span class="down">-</span>
+                                            <input type="text" value="1" name="input-amount">
+                                            <span class="up">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-3 total-amount">
+                                        <div class="price">350₽</div>
+                                    </div>
+
+                                    <div class="col-sm-2 d-block col-3 d-sm-block d-md-none button">
+                                        <a href="#" class="btn-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 d-none d-sm-none d-md-block">
+                            <a href="#" class="btn-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-button">
+                <a href="#" class="btn-next close" data-dismiss="modal">Продолжить покупки</a>
+                <a href="cart.html" class="btn-accent">В корзину</a>
+            </div>
+
+            <div class="modal-footer">
+                <h2>С этим товаром часто берут:</h2>
+
+                <div class="equipment-slider modal-carousel owl-carousel">
+                    <div class="carousel__item">
+                        <div class="card">
+                            <a href="#" class="card-img-top">
+                                <img class=" img-responsive" src="img/prod7.jpg" alt="">
+                            </a>
+
+                            <div class="card-body">
+                                <a href="#" class="card-title"><h5>Набор для вязания</h5></a>
+                                <div class="card-wrapper">
+                                    <div class="card-price">
+                                        <div class="new-price">
+                                            920₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="card">
+                            <a href="#" class="card-img-top">
+                                <img class=" img-responsive" src="img/prod7.jpg" alt="">
+                            </a>
+
+                            <div class="card-body">
+                                <a href="#" class="card-title"><h5>Набор для вязания</h5></a>
+                                <div class="card-wrapper">
+                                    <div class="card-price">
+                                        <div class="new-price">
+                                            920₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="card">
+                            <a href="#" class="card-img-top">
+                                <img class=" img-responsive" src="img/prod7.jpg" alt="">
+                            </a>
+
+                            <div class="card-body">
+                                <a href="#" class="card-title"><h5>Набор для вязания</h5></a>
+                                <div class="card-wrapper">
+                                    <div class="card-price">
+                                        <div class="new-price">
+                                            920₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="js/jquery.equalheights.min.js"></script>
+
+</body>
+</html>

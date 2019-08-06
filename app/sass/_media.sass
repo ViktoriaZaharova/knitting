@@ -1,0 +1,453 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px)
+  .banner
+    .container-fluid
+      .row
+        .banner-max
+          width: 60%
+
+@media only screen and (max-width : 1200px)
+  .navigation-menu .navbar-nav .nav-item .nav-link
+    font-size: 15px
+
+  .advantages-line__item
+    flex-direction: column
+    align-items: center
+    display: flex
+    p
+      margin: 10px 0 0 0
+      text-align: center
+
+  .instagram__item
+    width: 100%
+    overflow: hidden
+
+  .card
+    width: 300px
+
+  .authorization__content
+    width: 60%
+    min-width: auto
+
+  .authorization__form
+    flex-direction: column
+    align-items: center
+    width: 100%
+    .form-group
+      margin: 0 0 10px
+      width: 100%
+
+  .order-information__content
+    flex-direction: column
+    align-items: flex-start
+    .order-information__content-left
+      width: 100%
+    .subtotal
+      width: 100%
+      margin: 20px 0 0 0
+    .line .list-registration
+      margin-left: 0
+
+  .related-products
+    .card
+      width: 300px
+
+@media only screen and (max-width : 1100px)
+  .banner
+    .container-fluid
+      height: 100%
+      .row
+        height: 100%
+        .banner-min
+          display: none
+        .banner-max
+          width: 100%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .header-top__form
+    .form-group
+      label
+        font-size: 16px
+      .form-control
+        width: 250px
+
+  .modal-content
+    padding: 15px 30px
+
+  .cart-profile
+    margin-bottom: 20px
+
+  .page-content .page-content__image img
+    bottom: 0
+
+  .portfolio-product__item
+    height: 250px
+    margin-bottom: 20px
+    img
+      margin: 0 auto
+      right: 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .header-top__form
+    justify-content: center
+    align-items: flex-end
+    position: relative
+    .btn-submit
+      position: absolute
+      right: 0
+      bottom: 0
+    .form-group
+      flex-direction: column
+      align-items: flex-end
+      width: 100%
+      label
+        margin: 0 0 10px 0
+      .form-control
+        width: calc(100% - 71px)
+
+  .form-search-mobile
+    position: absolute
+    width: 100%
+    display: flex
+    align-items: center
+    flex-direction: column
+    z-index: 7
+    left: 0
+    top: 5%
+
+    background: #F9F9F9
+    margin: 0
+    #MobileSearch
+      padding: 20px 10px
+      .form-group
+        align-items: center
+        display: flex
+        flex-direction: column
+        width: 100%
+      .btn-submit
+        margin: 10px auto 0
+        display: block
+
+  .navigation-menu-desktop
+    display: none
+
+  .navigation-menu-mobile
+    position: absolute
+    flex-direction: column
+    z-index: 7
+    width: 100%
+    left: 0
+    top: 5%
+    #MobileMenu
+      background: #F9F9F9
+      padding: 20px 0
+      width: 100%
+    .navbar-nav
+      width: 100%
+      height: 100%
+      flex-direction: column
+      align-items: flex-start
+      .nav-item
+        width: 100%
+        .nav-link
+          padding: 10px 23px
+          box-sizing: border-box
+
+  .user, .basket, .truck
+    flex-direction: column
+    align-items: center
+    .icon
+      margin: 0 auto 5px
+
+  .banner
+    height: 170px
+
+  .brands-logo
+    width: 129px
+
+  .categories, .subscribe
+    display: none
+
+  .footer__item
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .selected-product__header .title
+    text-align: center
+
+  .selected-products__item-content
+    overflow: hidden
+    .amount-wrapper
+      border-top: 1px solid rgba(151, 151, 151, 0.3)
+      padding: 10px 15px
+    .total-amount, .button
+      border-top: 1px solid rgba(151, 151, 151, 0.3)
+
+  .authorization .col-12
+    flex-direction: column
+    align-items: center
+
+  .authorization__content
+    width: 100%
+    margin: 0 0 10px 0
+  .registration
+    width: 100%
+    max-width: none
+
+  .list-personal-data
+    column-count: 1
+
+  .page-nav
+    margin: 0 0 20px 0
+    li
+      a
+        line-height: 30px
+
+  .product-descripion
+    margin-top: 20px
+
+  .product-characteristics
+    margin-top: 0
+    .tabs-navigation
+      .nav-tabs
+        .nav-link
+          font-size: 14px
+
+  .reviews__item
+    flex-direction: column
+    align-items: center
+
+  h2
+    font-size: 30px
+
+  .portfolio-product__item
+    height: auto
+    img
+      position: relative
+      width: 100%
+
+  .banner-description__image
+    width: 100%
+    height: auto
+
+  .banner-description__wrapper
+    flex-direction: column
+
+  .block-sorting, .pagination-wrapper
+    display: none
+
+  .category-mobile
+    margin-top: 20px
+    display: flex
+    .container
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+    .category-item
+      background: transparent
+      border: none
+        radius: 0
+      box-shadow: none
+      cursor: pointer
+      width: 104px
+      .category-item__title
+        position: relative
+        left: 0
+        bottom: 0
+        width: 100%
+        padding: 0
+        color: #F32657
+        font:
+          weight: normal
+          size: 14px
+        text-align: center
+    .category-item-top
+      height: auto
+    .image
+      display: block
+      height: 85px
+      border: 1px solid rgba(151, 151, 151, 0.3)
+        radius: 5px
+      overflow: hidden
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+      img
+        position: relative
+        height: 100%
+        width: auto
+        margin: 0 auto
+        display: block
+    &:hover
+      .category-item__title
+        background: transparent
+
+  #MobileSidebar
+    position: absolute
+    top: 50px
+    left: 0
+    z-index: 5
+    width: 100%
+    background: #ffffff
+    .btn-submit
+      width: 100%
+      color: #ffffff
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      height: 60px
+      background: $accent
+      border-radius: 0
+    .filter__wrapper
+      padding: 0 15px
+
+
+@media only screen and (max-width : 570px)
+  .product-characteristics
+    .tab-content
+      .video
+        height: 300px
+    .tabs-navigation
+      .nav-tabs
+        .nav-link
+          padding: 0 10px 10px
+
+  .owl-prev
+    left: 0
+    top: 25%
+  .owl-next
+    right: 0
+    top: 25%
+
+  .btn-instagramm
+    .btn-default
+      width: 185px
+
+  footer .container
+    padding-top: 0
+
+  .form-subscribe
+    flex-direction: column
+    align-items: center
+    display: flex
+    width: 100%
+    .form-group
+      width: 100%
+      margin-bottom: 10px
+    .btn-accent
+      width: 100%
+      margin: 0 auto
+
+  .modal-button
+    flex-direction: column
+    align-items: center
+    .btn-accent
+      margin: 10px 0 0 0
+
+  .tab-pills
+    padding: 10px 20px
+    .tab-pane
+      .list-personal-data
+        li
+          padding: 10px
+          .icon
+            margin-left: 10px
+
+  .cart-profile__top
+    display: flex
+    flex-direction: column
+    align-items: center
+    .photo
+      margin: 0 0 5px 0
+
+  .page-content .page-content__image
+    height: auto
+    img
+      position: relative
+
+  .banner-description
+    display: none
+
+  .btn-delete
+    font-size: 20px
+
+  .modal-content
+    padding: 10px
+
+  .modal-footer h2
+    font-size: 18px
+    margin: 0 0 15px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  header
+    .header-top
+      display: none
+    .header-center
+      .container
+        padding: 12px 26px
+    .header-bottom
+      .container
+        padding: 13px 15px
+
+  .nav-tabs
+    justify-content: center
+    .nav-link
+      font-size: 14px
+
+  .card
+    width: 280px
+
+  .order-information__content .line
+    flex-direction: column
+    align-items: flex-start
+    .delivery-method__left
+      margin: 0 0 10px 0
+    .btn-accent
+      margin: 10px 0 0 0
+
+  .product-descripion .line
+    flex-direction: column
+    align-items: center
+    .btn-accent
+      margin: 10px auto 0
+      width: 100%
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
